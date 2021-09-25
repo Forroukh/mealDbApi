@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meal DB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <style>
+        body{
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(157, 206, 190);
+        }
+    
+    </style>
+</head>
+<body class="bg-gray mt-5">
+    <h1 class="text-center text-success" >Search Your Favorite Food</h1>
+    <nav>
+        <div class="input-group mb-3 w-50 mx-auto">
+            <input id="search-field" type="text" class="form-control" placeholder="Search Food" aria-label="Search the food you want" aria-describedby="button-addon2">
+            <button onclick="searchFood()" class="btn btn-outline-secondary" type="button" id="button-search">Button</button>
+          </div>
+    </nav>
+<!-- showing card details -->
+<div id="details-container" class="card" style="width: 20rem;">
+  </div>
+
+    <!-- card groups for showing meal-->
+    <div id="search-result" class="row row-cols-1 row-cols-md-2 g-4">
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
